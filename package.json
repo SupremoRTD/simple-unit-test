@@ -1,6 +1,6 @@
 {
   "name": "simple-unit-test",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "the live, love, laugh of unit tests",
   "type": "module",
   "main": "index.js",

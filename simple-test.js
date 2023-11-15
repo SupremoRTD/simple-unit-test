@@ -3,7 +3,7 @@ Test if this even works
 */
 import {describe, it, expects} from 'simple-unit-test'
 
-describe('Random Unit Tests', ()=>{
+describe('Random Math Tests', ()=>{
   it('1+3 should equal 4', ()=>{
     const sum = (a, b) => a + b
     expects(sum(1,3)).toBe(4)
@@ -20,6 +20,9 @@ describe('Random Unit Tests', ()=>{
     const sum = (a, b) => a + b
     expects(sum(10,1)).toBe(9)
   })
+})
+
+describe('Random Object Tests', ()=>{
   it('should return the object {test: true}', ()=>{
     expects({test: true}).toBe({test: true})
   })

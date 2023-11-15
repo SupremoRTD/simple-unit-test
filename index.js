@@ -30,7 +30,9 @@ const SimpUnit = () => {
       console.log(desc)
       func()
       console.log(`Passed: ${passCount}`)
-      console.log(`Failed: ${failCount}`)
+      console.log(`Failed: ${failCount}\n`)
+      name = value = result = ''
+      passCount = failCount = 0
     },
 
     it: (desc, func) => {
