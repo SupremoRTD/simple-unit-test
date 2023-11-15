@@ -1,0 +1,3 @@
+I could install jest, or some other professional testies suite...
+
+But what fun would that be.
