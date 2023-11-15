@@ -9,6 +9,20 @@
   },
   "author": "Steve Saldivar",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SupremoRTD/simple-unit-test.git"
+  },
+  "homepage": "https://github.com/SupremoRTD/simple-unit-test#readme",
+  "keywords": [
+    "test",
+    "testing",
+    "unit",
+    "assert",
+    "live",
+    "love",
+    "laugh"
+  ],
   "dependencies": {
     "lodash": "^4.17.21"
   }
