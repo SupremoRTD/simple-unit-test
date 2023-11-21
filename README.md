@@ -10,7 +10,7 @@ You're probably better off using a real testing suite.
 I just wanted to see if I can write my own since I've never really thought about
 how these things are made.
 
-I'm going to also write a little sometime to run all "-test.js" files because
+I'm going to also write a little something to run all "-test.js" files because
 I'm tired of doing it manually. That'll happen sometime soon-ish-y, unless you
 want to do it, then that's cool too, pull it baby, pull it.
 
