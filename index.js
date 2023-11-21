@@ -26,7 +26,7 @@ const SimpUnit = () => {
   }
 
   const simple = {
-    describe: (desc, func) => {
+    describe(desc, func) {
       console.log(desc)
       func()
       console.log(`Passed: ${passCount}`)
@@ -35,7 +35,7 @@ const SimpUnit = () => {
       passCount = failCount = 0
     },
 
-    it: (desc, func) => {
+    it(desc, func) {
       name = desc
       func()
       return simple
