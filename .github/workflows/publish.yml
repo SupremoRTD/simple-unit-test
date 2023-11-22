@@ -8,20 +8,25 @@ jobs:
     name: publish
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: node
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
       - name: Publish to NPM
-        run: npm publish --access public --registry=https://registry.npmjs.org
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > .npmrc
+          npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
       - name: Publish to GitHub Packages
-        run: npm publish --registry=https://npm.pkg.github.com/
+        run: |
+          echo "//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}" > .npmrc
+          echo "@aataxe:registry=https://npm.pkg.github.com/" >> .npmrc
+          npm publish --registry=https://npm.pkg.github.com/
         env:
           NODE_AUTH_TOKEN: ${{secrets.GH_PACKAGE_TOKEN}}
