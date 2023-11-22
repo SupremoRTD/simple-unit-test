@@ -5,7 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "node index.test.js"
+    "test": "node run-tests.js"
   },
   "author": "Steve Saldivar",
   "license": "ISC",

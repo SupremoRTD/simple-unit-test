@@ -10,10 +10,6 @@ You're probably better off using a real testing suite.
 I just wanted to see if I can write my own since I've never really thought about
 how these things are made.
 
-I'm going to also write a little something to run all "-test.js" files because
-I'm tired of doing it manually. That'll happen sometime soon-ish-y, unless you
-want to do it, then that's cool too, pull it baby, pull it.
-
 With that being said, if you insist on using this, then read on my adventurous
 friends...
 
@@ -23,7 +19,7 @@ friends...
 /*
 Let's run some tests baby!!!
 */
-import { describe, it, expects } from 'simple-unit-test'
+import { describe, it, expects } from '@aatxxe/simple-unit-test'
 import simpleSum from './simpleSum.js'
 
 describe('Random Math Tests', () => {
@@ -63,5 +59,18 @@ describe('Random Object Tests', () => {
   console.log(`Maybe do stuff after the test block runs, you do you.`)
 })
 ```
+
+### Run test with your pancakes.jason scripts:
+
+```json
+{
+  ...
+  "scripts": {
+    "test": "node node_modules/@aatxxe/simple-unit-test/run-tests.js"
+  }
+}
+```
+
+### If your machine is still intact you should see some output:
 
 <img src="https://i.imgur.com/F8wjXSx.png" alt="terminal-output" width="500"/>
